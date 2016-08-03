@@ -1,0 +1,11 @@
+		Colors and Fonts
+- Colors
+#B4F57B : vert pomme
+#FFFFFF : blanc
+#514453 : marron fonçé
+#FA479A : fushia
+#FEFE6B : jaune
+
+- Fonts
+General fonts      : Oxygen (google font)
+Business Name Font : Lora 
