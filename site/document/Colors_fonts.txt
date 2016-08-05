@@ -8,4 +8,7 @@
 
 - Fonts
 General fonts      : Oxygen (google font)
-Business Name Font : Lora 
+Business Name Font : Lora
+
+- Font Logo
+Candara Bold
