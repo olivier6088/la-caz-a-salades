@@ -1,8 +1,8 @@
 body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #B4F57B;
-  font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background-color: #B4F57B;
+	font-family: 'Oxygen', sans-serif;
 }
 
 /** HEADER **/
@@ -13,8 +13,90 @@ body {
 }
 
 #logo-img {
-	background: url('../images/logo/logo_OSA/large_marron_616X90.png') no-repeat;
-	width: 616px;
-	height: 90px;
+	background: url('../images/logo/logo_OSA/large_marron_498X69.png') no-repeat;
+	width: 498px;
+	height: 69px;
 	margin: 10px 15px 10px 0;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #FFFFFF;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+.nav-menu a span {
+	font-size: 1.8em;
+}
+
+#phone a { /* Phone number */
+	text-align: right;
+	padding-bottom: 0;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /* Menu button color */
+	border: 1px solid #B4F57B;
+}
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	/* Header */
+	#logo-img {
+		background: url('../images/logo/logo_OSA/medium_marron_390X52.png') no-repeat;
+		width: 390px;
+		height: 52px;
+		margin: 20px 5px 5px 0;
+	}
+	/* End Header */
+}
+
+/********** Extra small devices only **********/
+@media (min-width: 480px) and (max-width: 767px) {
+	/* Header */
+	#logo-img {
+		background: url('../images/logo/logo_OSA/medium_marron_390X52.png') no-repeat;
+		width: 390px;
+		height: 52px;
+		margin: 5px 5px 5px 0;
+	}
+	/* End Header */
+	.nav-menu a { /* Collapsed nav menu glyph*/
+		font-size: 1.2em;
+	}
+	.nav-menu a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
+}
+/********** Custom, iPhone Retina **********/
+@media (min-width: 320px) and (max-width: 479px) {
+	/* Header */
+	#logo-img {
+		background: url('../images/logo/logo_OSA/small_marron_243X36.png') no-repeat;
+		width: 243px;
+		height: 36px;
+	}
+	/* End Header */
+	.nav-menu a { /* Collapsed nav menu glyph*/
+		font-size: 1.2em;
+	}
+	.nav-menu a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
 }

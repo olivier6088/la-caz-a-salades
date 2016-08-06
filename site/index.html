@@ -15,20 +15,42 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <a href="index.html" class="pull-left">
             <div id="logo-img" alt="Logo"></div>
           </a>
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          
         </div>
-      </div>
-    </nav>
+
+        <div id="collapse-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li class="nav-menu">
+              <a href="">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu
+              </a>
+            </li>
+            <li class="nav-menu">
+              <a href="">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> A Propos
+              </a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:0262416952">
+                <span class="glyphicon glyphicon-earphone"></span> 02 62 41 69 52
+              </a>
+              <a href="tel:0692603171">
+                <span class="glyphicon glyphicon-phone"></span> 06 92 60 31 71
+              </a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
   </header>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
