@@ -43,14 +43,62 @@ body {
 }
 /* END HEADER */
 
+/* HOME PAGE */
+.container .jumbotron {
+	box-shadow: 0 0 50px #514453;
+	border: 2px solid #514453;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 1px solid #514453;
+	overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+
+#menu-tile {
+	background: url('../images/plats/plat_360X250.jpg') no-repeat;
+	background-position: center;
+}
+#specials-tile {
+	background: url('../images/plats/dessert_360X250.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #FFF;
+	opacity: .8;
+}
+/* END HOME PAGE */
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+	.container .jumbotron {
+		background: url('../images/salle/jumbotron_1200.jpg') no-repeat;
+		height: 675px;
+	}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+	.container .jumbotron {
+		background: url('../images/salle/jumbotron_992.jpg') no-repeat;
+		height: 558px;
+	}
 }
 
 /********** Small devices only **********/
@@ -63,9 +111,49 @@ body {
 		margin: 20px 5px 5px 0;
 	}
 	/* End Header */
+	.container .jumbotron {
+		background: url('../images/salle/jumbotron_768.jpg') no-repeat;
+		height: 432px;
+	}
 }
 
 /********** Extra small devices only **********/
+@media (max-width: 767px) {
+	/* HEADER */
+	.nav-menu a { /* Collapsed nav menu glyph*/
+		font-size: 1.2em;
+	}
+	.nav-menu a span {
+		font-size: 1.2em;
+		margin-right: 5px;
+	}
+
+	#call-btn > a {
+		font-size: 1em;
+		display: block;
+		margin: 0 20px 5px 20px;
+		padding: 10px;
+		border: 2px solid #fff;
+		background-color: #514453;
+		color: #FFFFFF;
+	}
+	/* End HEADER*/
+
+	/* HOME PAGE */
+	.container .jumbotron {
+		margin-top: 30px;
+		padding: 0;
+	}
+
+	#menu-tile, #specials-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+	}
+
+
+}
+
+/********** Extra small - smartphone and tablet max **********/
 @media (min-width: 480px) and (max-width: 767px) {
 	/* Header */
 	#logo-img {
@@ -75,16 +163,9 @@ body {
 		margin: 5px 5px 5px 0;
 	}
 	/* End Header */
-	.nav-menu a { /* Collapsed nav menu glyph*/
-		font-size: 1.2em;
-	}
-	.nav-menu a span {
-		font-size: 1em;
-		margin-right: 5px;
-	}
 }
-/********** Custom, iPhone Retina **********/
-@media (min-width: 320px) and (max-width: 479px) {
+/********** Extra small - custom (iPhone Retina) **********/
+@media (max-width: 479px) {
 	/* Header */
 	#logo-img {
 		background: url('../images/logo/logo_OSA/small_marron_243X36.png') no-repeat;
@@ -92,11 +173,11 @@ body {
 		height: 36px;
 	}
 	/* End Header */
-	.nav-menu a { /* Collapsed nav menu glyph*/
-		font-size: 1.2em;
+
+	/* HOME PAGE */
+	#menu-tile, #specials-tile {
+		width: 280px;
+		margin: 0 auto 15px;
 	}
-	.nav-menu a span {
-		font-size: 1em;
-		margin-right: 5px;
-	}
+	/* END HOME PAGE */
 }
