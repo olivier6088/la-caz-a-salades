@@ -3,7 +3,7 @@
 #B4F57B : vert pomme
 #FFFFFF : blanc
 #514453 : marron fonçé
-#FA479A : fushia
+#dd5895 : fushia
 #FEFE6B : jaune
 
 - Fonts

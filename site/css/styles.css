@@ -11,14 +11,14 @@ body {
 	border-radius: 0;
 	border: 0;
 }
-
+/* Logo */
 #logo-img {
 	background: url('../images/logo/logo_OSA/large_marron_498X69.png') no-repeat;
 	width: 498px;
 	height: 69px;
 	margin: 10px 15px 10px 0;
 }
-
+/* Navlist */
 #nav-list {
 	margin-top: 10px;
 }
@@ -26,14 +26,15 @@ body {
 	color: #FFFFFF;
 	text-align: center;
 }
-#nav-list a:hover {
-	background: #E7E7E7;
+#nav-list a:hover, #nav-list a:focus {
+	background-color: none;
+	color: #DD5895;
 }
 .nav-menu a span {
 	font-size: 1.8em;
 }
-
-#phone a { /* Phone number */
+/* Phone Numbers */
+#phone a {
 	text-align: right;
 }
 #phone a:nth-child(1) {
@@ -42,8 +43,8 @@ body {
 #phone a:nth-child(2) {
 	padding-top: 10px;
 }
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar { /* Menu button color */
+/* Menu button color */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
 	border: 1px solid #B4F57B;
 }
 /* END HEADER */
@@ -93,9 +94,12 @@ body {
 }
 
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-	box-shadow: 0 1px 5px 1px #CCCCCC;
+	/* box-shadow: 0 1px 5px 1px #CCCCCC; */
+	box-shadow: 0 1px 5px 1px #DD5895;
 }
-
+#menu-tile span:hover, #specials-tile span:hover, #map-tile span:hover {
+	color: #DD5895;
+}
 #menu-tile {
 	background: url('../images/plats/plat_360X250.jpg') no-repeat;
 	background-position: center;
