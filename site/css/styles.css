@@ -1,7 +1,7 @@
 body {
 	font-size: 16px;
 	color: #fff;
-	background-color: #B4F57B;
+	background-color: #b4f57b;
 	font-family: 'Oxygen', sans-serif;
 }
 
@@ -23,12 +23,13 @@ body {
 	margin-top: 10px;
 }
 #nav-list a {
-	color: #FFFFFF;
+	color: #fff;
 	text-align: center;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
 }
 #nav-list a:hover, #nav-list a:focus {
 	background-color: none;
-	color: #DD5895;
+	color: #dd5895;
 }
 .nav-menu a span {
 	font-size: 1.8em;
@@ -45,7 +46,7 @@ body {
 }
 /* Menu button color */
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-	border: 1px solid #B4F57B;
+	border: 1px solid #b4f57b;
 }
 /* END HEADER */
 
@@ -66,12 +67,14 @@ body {
 }
 #hours, #address {
 	line-height: 2;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
 }
 #hours > span, #address > span {
 	font-size: 1.3em;
 }
 #testimonials {
 	font-style: italic;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
 }
 #fb-link {
 	margin-top: 10px;
@@ -110,21 +113,25 @@ body {
 	font-size: 1.6em;
 	text-transform: uppercase;
 	background-color: #000;
-	color: #FFF;
+	color: #fff;
 	opacity: .8;
 }
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-	box-shadow: 0 1px 5px 1px #DD5895;
+	box-shadow: 0 1px 5px 1px #dd5895;
 }
 #menu-tile:hover span, #specials-tile:hover span, #map-tile:hover span {
-	color: #DD5895;
+	color: #dd5895;
 }
 /* END HOME PAGE */
 
 /* MENU CATEGORIES PAGE */
 #menu-categories-title {
 	margin-bottom: 50px;
-	color: #514453;
+	/*color: #514453;*/
+}
+#menu-categories-title h1 {
+	font-weight: 700;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
 }
 .category-tile { 
 	position: relative;
@@ -148,10 +155,10 @@ body {
 	opacity: .8;
 }
 .category-tile:hover {
-	box-shadow: 0 1px 5px 1px #DD5895;
+	box-shadow: 0 1px 5px 1px #dd5895;
 }
 .category-tile:hover span {
-	color: #DD5895;
+	color: #dd5895;
 }
 /* END MENU CATEGORIES PAGE */
 
@@ -231,7 +238,7 @@ body {
 			padding: 10px;
 			border: 2px solid #fff;
 			background-color: #514453;
-			color: #FFFFFF;
+			color: #fff;
 		}
 		#nav-list a {
 			text-align: left;
