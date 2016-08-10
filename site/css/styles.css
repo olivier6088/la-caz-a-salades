@@ -124,6 +124,7 @@ body {
 /* MENU CATEGORIES PAGE */
 #menu-categories-title {
 	margin-bottom: 50px;
+	color: #514453;
 }
 .category-tile { 
 	position: relative;
@@ -147,7 +148,7 @@ body {
 	opacity: .8;
 }
 .category-tile:hover {
-	background-color: none;
+	box-shadow: 0 1px 5px 1px #DD5895;
 }
 .category-tile:hover span {
 	color: #DD5895;
