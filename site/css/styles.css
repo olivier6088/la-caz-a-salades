@@ -90,15 +90,8 @@ body {
 	margin-bottom: 15px;
 	position: relative;
 	border: 1px solid #514453;
+	border-radius: 3px;
 	overflow: hidden;
-}
-
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-	/* box-shadow: 0 1px 5px 1px #CCCCCC; */
-	box-shadow: 0 1px 5px 1px #DD5895;
-}
-#menu-tile span:hover, #specials-tile span:hover, #map-tile span:hover {
-	color: #DD5895;
 }
 #menu-tile {
 	background: url('../images/plats/plat_360X250.jpg') no-repeat;
@@ -108,7 +101,6 @@ body {
 	background: url('../images/plats/dessert_360X250.jpg') no-repeat;
 	background-position: center;
 }
-
 #menu-tile span, #specials-tile span, #map-tile span {
 	position: absolute;
 	bottom: 0;
@@ -121,7 +113,46 @@ body {
 	color: #FFF;
 	opacity: .8;
 }
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #DD5895;
+}
+#menu-tile:hover span, #specials-tile:hover span, #map-tile:hover span {
+	color: #DD5895;
+}
 /* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+#menu-categories-title {
+	margin-bottom: 50px;
+}
+.category-tile { 
+	position: relative;
+	border: 1px solid #514453;
+	border-radius: 3px;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	/*text-transform: uppercase;*/
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+.category-tile:hover {
+	background-color: none;
+}
+.category-tile:hover span {
+	color: #DD5895;
+}
+/* END MENU CATEGORIES PAGE */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -201,6 +232,9 @@ body {
 			background-color: #514453;
 			color: #FFFFFF;
 		}
+		#nav-list a {
+			text-align: left;
+		}
 		/* END HEADER*/
 
 		/* FOOTER */
@@ -253,4 +287,12 @@ body {
 			margin: 0 auto 15px;
 		}
 		/* END HOME PAGE */
+		.col-xxs-12 {
+			position: relative;
+			min-height: 1px;
+			padding-right: 15px;
+			padding-left: 15px;
+			float: left;
+			width: 100%;
+		}
 	}
