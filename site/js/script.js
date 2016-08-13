@@ -1,129 +1,160 @@
-$(function () { // Same as document.addEventListener("DOMContentLoaded"...
+$(function() {                                              // When the DOM is ready
 
-  // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
-  $("#navbarToggle").blur(function (event) {
-    var screenWidth = window.innerWidth;
-    if (screenWidth < 768) {
-      $("#collapsable-nav").collapse('hide');
+    // CHECK IF AJAX REQUEST IS SUPPORTED
+    $.ajax({                                                // Setup request
+        beforeSend: function(xhr) {                         // Before requesting data
+            if(xhr.overrideMimeType) {                      // If supported
+                xhr.overrideMimeType("application/json");   // set MIME to prevent errors
+            }
+        }
+    });
+
+    // DECLARE SNIPPETS URLS
+    var accueilHtml = "snippets/jq-load-accueil.html";
+
+    // CONVENIENT FUNCTIONS
+    // Convenience function for inserting innerHTML for 'select'
+    var insertHtml = function (selector, html) {
+        var targetElem = document.querySelector(selector);
+        targetElem.innerHTML = html;
+    };
+
+    // Show loading icon inside element identified by 'selector'.
+    var showLoading = function (selector) {
+        var html = "<div class='text-center'>";
+        html += "<img src='images/ajax-loader.gif'></div>";
+        insertHtml(selector, html);
+    };
+
+    // ON FIRST LOAD SHOW HOME VIEW
+    showLoading("#main-content");
+    $('#main-content').load(accueilHtml);
+
+    // COLLECT DATA FROM FILES
+    var data;                                                       // Declare global variable
+    var keys;                                                       // Declare global variable
+    // From 'data.json' file
+    function loadCategories() {                                     // Declare function
+        $.getJSON('data/data.json')                                 // Try to collect JSON data
+        .done( function(res) {                                      // If successful
+            data = res;                                             // Store it in a variable
+            keys = Object.keys(data);                               // Get the keys of object data ("SL", "AM", etc...)
+        }).fail( function() {                                       // If a problem: show message
+            // Add code
+        })
     }
-  });
+    // Call functions
+    loadCategories();                                               // Call the function loadCategories()
 
-  // In Firefox and Safari, the click event doesn't retain the focus
-  // on the clicked button. Therefore, the blur event will not fire on
-  // user clicking somewhere else in the page and the blur event handler
-  // which is set up above will not be called.
-  // Refer to issue #28 in the repo.
-  // Solution: force focus on the element that the click event fired on
-  $("#navbarToggle").click(function (event) {
-    $(event.target).focus();
-  });
+
+    // LOAD CATEGORIES PAGE FROM NAV MENU
+    // $("#nav-lacarte a").on('click', function(e) {                        // User clicks on nav link '#lacarte'
+    $(document).on('click', "#nav-lacarte a, #lacarte-tile", function(e) {  // User clicks on nav link '#lacarte' or '#lacarte-tile'
+        e.preventDefault();                                                 // Prevent loading page
+        var newContent = '<h2 class="text-center">La Carte</h2>';           // To build up categories view
+        newContent += '<section class="row">';
+        for(var i = 0; i < keys.length; i++) {                              // Loop through categories
+            // Insert category values
+            var name = "" + data[keys[i]].name;
+            newContent += '<div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">';
+            newContent += '<a href="" id="' + keys[i] + '">';
+            newContent += '<div class="category-tile">';
+            //<!--<img width="200" height="200" src="images/menu/{{short_name}}/{{short_name}}.jpg" alt="{{name}}">
+            //<span>{{name}}</span>-->'
+            newContent += '<img width="200" height="200" src="http://fakeimg.pl/200x200/?text=Photo"><span>' + name + '</span>';
+            newContent += '</div>';
+            newContent += '</a>';
+            newContent += '</div>';
+        }
+        newContent += "</section>";
+        $("#main-content").html(newContent);                                 // Update '#main-content'
+
+    });
+
+    // LOAD ITEMS PAGE
+    // Declare function itemsDisplay() with arg 'cat' (value is "SL", "BO", ...) 
+    function itemsDisplay(cat) {
+        var newContent = '<h2 class="text-center">' + data[cat].name + '</h2>'; // To build up categories view
+        newContent += '<div id="category-item-description" class="text-center">' + data[cat].description + '</div>';
+        newContent += "<section class='row'>";
+        for(var i = 0; i < data[cat].items.length; i++) {
+            // Insert selected category items
+            newContent += '<div class="menu-item-tile col-md-6">';
+            newContent +=   '<div class="row">';
+            newContent +=     '<div class="col-sm-5">';
+            newContent +=       '<div class="menu-item-photo">';
+            newContent +=         '<div>' + data[cat].items[i].id + '</div>';
+            // newContent +=           '<img class="img-responsive" width="250" height="150" src="images/menu/' + cat + '/' + data[cat].items[i].id + '.jpg" alt="Item">';
+            newContent +=          '<img width="250" height="150" src="http://fakeimg.pl/250x150/?text=Photo">';
+            newContent +=        '</div>';
+            newContent +=        '<div class="menu-item-price">';
+            newContent +=          data[cat].items[i].price.toFixed(2) + '€ ' + '<span>(sur place)</span>';
+            if(data[cat].items[i].price_takeaway != "") {
+                newContent +=      '<br>' + data[cat].items[i].price_takeaway.toFixed(2) + '€ ' + '<span>(à emporter)</span>';
+            }
+            newContent +=        '</div>';
+            newContent +=     '</div>';
+            newContent +=     '<div class="menu-item-description col-sm-7">';
+            newContent +=       '<h3 class="menu-item-title">' + data[cat].items[i].name + '</h3>';
+            newContent +=       '<p class="menu-item-details">' + data[cat].items[i].description + '</p>';
+            newContent +=     '</div>';
+            newContent +=   '</div>';
+            newContent +=   '<hr class="visible-xs">';
+            newContent += '</div>';
+            // Add clearfix after every second menu item
+            if (i % 2 != 0) {
+                newContent += '<div class="clearfix visible-lg-block visible-md-block"></div>';
+            }
+        }
+        newContent += "</section>";
+        return(newContent);
+    }
+
+    // Click on a picture in page la carte
+    // $('#main-content').on('click', 'section a', function(e) {                // User clicks on nav link '#lacarte'
+    $(document).on('click', '#main-content section a', function(e) {            // User clicks on nav link '#lacarte'
+        e.preventDefault();                                                     // Prevent loading page
+        var cat = this.id;                                                      // Get value of id attr
+        var newContent = itemsDisplay(cat);
+        $("#main-content").html(newContent);                                    // Update '#main-content'
+    });
+    // Click on nav button '#nav-lesboissons'
+    $(document).on('click', '#nav-lesboissons', function(e) {                   // User clicks on nav link '#lacarte'
+        e.preventDefault();                                                     // Prevent loading page
+        var cat = "BO";                                                         // Get value of id attr
+        var newContent = itemsDisplay(cat);
+        $("#main-content").html(newContent);                                    // Update '#main-content'
+    });
+    // Click on nav button '#nav-lesdesserts' or '#lesdesserts-tile'
+    $(document).on('click', '#nav-lesdesserts, #lesdesserts-tile', function(e) { // User clicks on nav link '#lacarte'
+        e.preventDefault();                                                      // Prevent loading page
+        var cat = "DE";                                                          // Get value of id attr
+        var newContent = itemsDisplay(cat);
+        $("#main-content").html(newContent);                                     // Update '#main-content'
+    });
+
+    // CLICK ON LOGO
+    $('.navbar-header a').on('click', function(e) {         // Click on logo
+        e.preventDefault();                                 // Prevent loading page
+        $('#main-content').load(accueilHtml);               // Add html snippet in '#main-content'
+    });
+
+    // Nota Bene:
+    // $(document) allows to bound the click event handler to an element that existed when the page was
+    // rendered (document) and specified a selector string to filter the descendants of the selected
+    // element that triggers the event.
+    // cf. https://www.sitepoint.com/community/t/jquery-code-doesnt-work-on-dynamic-content-loaded-with-ajax/31758/5
+    // cf. http://stackoverflow.com/questions/6537323/jquery-function-not-binding-to-newly-added-dom-elements
+    
+    /*    // CLICK ON PRIMARY NAVIGATION
+    $('.nav-menu a').on('click', function(e) {              // Click on nav links
+        e.preventDefault();                                 // Prevent loading page
+        var url = this.href;                                // Get URL to load
+
+        $('.nav-menu a.active').removeClass('active');      // Update nav
+        $(this).addClass('active');
+
+        $('#main-content').load(url);                       // Add html snippet in '#main-content'
+    });*/
+
 });
-
-(function (global) {
-
-  var dc = {};
-
-  var homeHtml            = "snippets/home-snippet.html";
-  var allCategoriesUrl    = "js/categories.json";
-  var categoriesTitleHtml = "snippets/categories-title-snippet.html";
-  var categoryHtml        = "snippets/category-snippet.html";
-
-// Convenience function for inserting innerHTML for 'select'
-var insertHtml = function (selector, html) {
-  var targetElem = document.querySelector(selector);
-  targetElem.innerHTML = html;
-};
-
-// Show loading icon inside element identified by 'selector'.
-var showLoading = function (selector) {
-  var html = "<div class='text-center'>";
-  html += "<img src='images/ajax-loader.gif'></div>";
-  insertHtml(selector, html);
-};
-
-// Return substitute of '{{propName}}'
-// with propValue in given 'string'
-var insertProperty = function (string, propName, propValue) {
-  var propToReplace = "{{" + propName + "}}";
-  string = string
-  .replace(new RegExp(propToReplace, "g"), propValue);
-  return string;
-}
-
-// On page load (before images or CSS)
-document.addEventListener("DOMContentLoaded", function (event) {
-
-// On first load, show home view
-showLoading("#main-content");
-$ajaxUtils.sendGetRequest(
-  homeHtml,
-  function (responseText) {
-    document.querySelector("#main-content")
-    .innerHTML = responseText;
-  },
-  false);
-});
-
-// Load the menu categories view
-dc.loadMenuCategories = function () {
-  showLoading("#main-content");
-  $ajaxUtils.sendGetRequest(
-    allCategoriesUrl,
-    buildAndShowCategoriesHTML);
-};
-
-
-// Builds HTML for the categories page based on the data
-// from the server
-function buildAndShowCategoriesHTML (categories) {
-  // Load title snippet of categories page
-  $ajaxUtils.sendGetRequest(
-    categoriesTitleHtml,
-    function (categoriesTitleHtml) {
-    // Retrieve single category snippet
-    $ajaxUtils.sendGetRequest(
-      categoryHtml,
-      function (categoryHtml) {
-        var categoriesViewHtml =
-        buildCategoriesViewHtml(categories,
-          categoriesTitleHtml,
-          categoryHtml);
-        insertHtml("#main-content", categoriesViewHtml);
-      },
-      false);
-  },
-  false);
-}
-
-// Using categories data and snippets html
-// build categories view HTML to be inserted into page
-function buildCategoriesViewHtml(categories,
-  categoriesTitleHtml,
-  categoryHtml) {
-
-  var finalHtml = categoriesTitleHtml;
-  finalHtml += "<section class='row'>";
-
-  // Loop over categories
-  for (var i = 0; i < categories.length; i++) {
-    // Insert category values
-    var html = categoryHtml;
-    var name = "" + categories[i].name;
-    var short_name = categories[i].short_name;
-    html =
-    insertProperty(html, "name", name);
-    html =
-    insertProperty(html,
-      "short_name",
-      short_name);
-    finalHtml += html;
-  }
-
-  finalHtml += "</section>";
-  return finalHtml;
-}
-
-
-global.$dc = dc;
-
-})(window);

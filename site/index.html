@@ -16,7 +16,7 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left">
+          <a href="" class="pull-left">
             <div id="logo-img" alt="Logo"></div>
           </a>
 
@@ -30,17 +30,22 @@
 
         <div id="collapse-nav" class="collapse navbar-collapse">
           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="nav-menu">
-              <a href="#" onclick="$dc.loadMenuCategories();">
-              <span class="fa fa-cutlery"></span><br class="hidden-xs"> La Carte
+            <li id="accueil" class="nav-menu visible-xs">
+              <a href="snippets/jq-load-accueil.html">
+                <span class="fa fa-home"></span> Accueil
               </a>
             </li>
-            <li class="nav-menu">
+            <li id="nav-lacarte" class="nav-menu">
+              <a href="">
+                <span class="fa fa-cutlery"></span><br class="hidden-xs"> La Carte
+              </a>
+            </li>
+            <li id="nav-lesdesserts" class="nav-menu">
               <a href="">
                 <span class="fa fa-spoon"></span><br class="hidden-xs"> Les Desserts
               </a>
             </li>
-            <li class="nav-menu">
+            <li id="nav-lesboissons" class="nav-menu">
               <a href="">
                 <span class="fa fa-coffee"></span><br class="hidden-xs"> Les Boissons
               </a>
@@ -68,7 +73,8 @@
     </a>
   </div>
 
-  <div id="main-content" class="container"></div><!-- End of #main-content -->
+ <!-- Main content updated with ajax requests -->
+  <div id="main-content" class="container"></div>
 
   <footer class="panel-footer">
     <div class="container">
@@ -105,7 +111,6 @@
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
 
 </body>

@@ -86,25 +86,28 @@ body {
 	box-shadow: 0 0 50px #514453;
 	border: 2px solid #514453;
 }
-
-#menu-tile, #specials-tile, #map-tile {
+#main-content h2 {
+	font-weight: 700;
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+}
+#lacarte-tile, #lesdesserts-tile, #map-tile {
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
 	position: relative;
 	border: 1px solid #514453;
-	border-radius: 3px;
+	border-radius: 6px;
 	overflow: hidden;
 }
-#menu-tile {
+#lacarte-tile {
 	background: url('../images/plats/plat_360X250.jpg') no-repeat;
 	background-position: center;
 }
-#specials-tile {
+#lesdesserts-tile {
 	background: url('../images/plats/dessert_360X250.jpg') no-repeat;
 	background-position: center;
 }
-#menu-tile span, #specials-tile span, #map-tile span {
+#lacarte-tile span, #lesdesserts-tile span, #map-tile span {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -116,10 +119,10 @@ body {
 	color: #fff;
 	opacity: .8;
 }
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+#lacarte-tile:hover, #lesdesserts-tile:hover, #map-tile:hover {
 	box-shadow: 0 1px 5px 1px #dd5895;
 }
-#menu-tile:hover span, #specials-tile:hover span, #map-tile:hover span {
+#lacarte-tile:hover span, #lesdesserts-tile:hover span, #map-tile:hover span {
 	color: #dd5895;
 }
 /* END HOME PAGE */
@@ -136,7 +139,7 @@ body {
 .category-tile { 
 	position: relative;
 	border: 1px solid #514453;
-	border-radius: 3px;
+	border-radius: 6px;
 	overflow: hidden;
 	width: 200px;
 	height: 200px;
@@ -161,6 +164,58 @@ body {
 	color: #dd5895;
 }
 /* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+#category-item-description {
+	margin-bottom: 30px;
+}
+.menu-item-tile {
+	margin-bottom: 25px;
+}
+.menu-item-tile hr {
+	width: 80%;
+}
+.menu-item-tile .menu-item-price {
+	font-size: 0.8em;
+	color: #514453;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+	font-size: .6em;
+}
+.menu-item-photo {
+	position: relative;
+	border: 1px solid #514453;
+    border-radius: 6px;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+.menu-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: #dd5895;
+	text-align: center;
+}
+.menu-item-description {
+	color: #514453;
+	padding-right: 30px;
+}
+h3.menu-item-title {
+	margin: 0 0 10px;
+}
+.menu-item-details {
+	font-size: .9em;
+	font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -259,10 +314,18 @@ body {
 			margin-top: 30px;
 			padding: 0;
 		}
-
-		#menu-tile, #specials-tile {
+		#lacarte-tile, #lesdesserts-tile {
 			width: 360px;
 			margin: 0 auto 15px;
+		}
+		.menu-item-photo {
+			margin-right: auto;
+		}
+		.menu-item-tile .menu-item-price {
+			text-align: center;
+		}
+		.menu-item-description {
+			text-align: center;;
 		}
 		/* END HOME PAGE */
 
@@ -290,7 +353,7 @@ body {
 		/* END HEADER */
 
 		/* HOME PAGE */
-		#menu-tile, #specials-tile {
+		#lacarte-tile, #lesdesserts-tile {
 			width: 280px;
 			margin: 0 auto 15px;
 		}
