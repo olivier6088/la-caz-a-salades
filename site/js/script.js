@@ -133,8 +133,8 @@ $(function() {                                              // When the DOM is r
         $("#main-content").html(newContent);                                     // Update '#main-content'
     });
 
-    // CLICK ON LOGO
-    $('.navbar-header a').on('click', function(e) {         // Click on logo
+    // CLICK ON LOGO OR '#nav-accueil'
+    $('.navbar-header a, #nav-accueil').on('click', function(e) {         // Click on logo
         e.preventDefault();                                 // Prevent loading page
         $('#main-content').load(accueilHtml);               // Add html snippet in '#main-content'
     });
