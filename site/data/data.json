@@ -1,12 +1,12 @@
 {
 	"SL": {
 		"name":"Les Salades",
-		"description":"Nos salades peuvent être accompagnées de pâtes fraîches",
+		"description":"Nos salades peuvent être accompagnées de pâtes fraîches.",
 		"items":[
 			{
 				"id":"SL1",
 				"name":"Végétarienne",
-				"description":"Tomates, carottes, poivrons, concombres, maïs, olives, oeufs",
+				"description":"Tomates, carottes, poivrons, concombres, maïs, olives, oeufs.",
 				"price":9.60,
 				"price_takeaway":6.80,
 				"price_alt":11.10,
@@ -15,7 +15,7 @@
 			{
 				"id":"SL2",
 				"name":"Des Plaines",
-				"description":"Tomates, fromages des plaines, lardons ou thon",
+				"description":"Tomates, fromages des plaines, lardons ou thon.",
 				"price":9.60,
 				"price_takeaway":6.80,
 				"price_alt":11.10,
@@ -24,7 +24,7 @@
 			{
 				"id":"SL3",
 				"name":"Légumes vapeur",
-				"description":"Carottes, chouchou, pommes de terre, haricots verts, lardons ou thon",
+				"description":"Carottes, chouchou, pommes de terre, haricots verts, lardons ou thon.",
 				"price":10.50,
 				"price_takeaway":7.50,
 				"price_alt":12.00,
@@ -33,7 +33,7 @@
 			{
 				"id":"SL4",
 				"name":"Campagnarde",
-				"description":"Tomates, blancs de poulet, oignons, lardons, emmental",
+				"description":"Tomates, blancs de poulet, oignons, lardons, emmental.",
 				"price":11.00,
 				"price_takeaway":8.00,
 				"price_alt":13.00,
@@ -42,7 +42,7 @@
 			{
 				"id":"SL5",
 				"name":"Océane",
-				"description":"Tomates cerises, saumon fûmé, marlin ou espadon, citron",
+				"description":"Tomates cerises, saumon fûmé, marlin ou espadon, citron.",
 				"price":12.50,
 				"price_takeaway":10.00,
 				"price_alt":14.00,
@@ -51,7 +51,7 @@
 			{
 				"id":"SL6",
 				"name":"Chèvre chaud",
-				"description":"Tomates cerises, noix, toast de chèvre",
+				"description":"Tomates cerises, noix, toast de chèvre.",
 				"price":11.00,
 				"price_takeaway":"",
 				"price_alt":"",
@@ -77,54 +77,312 @@
 				"name":"Poulet rôti",
 				"description":"",
 				"price":11.00,
-				"price_takeaway":8.30,
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":8.30
 			},
 			{
 				"id":"PL2",
 				"name":"Brochettes de poulet",
 				"description":"",
 				"price":11.00,
-				"price_takeaway":8.30,
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":8.30
 			},
 			{
 				"id":"PL3",
-				"name":"Steack hâché",
+				"name":"Steack haché",
 				"description":"",
 				"price":11.00,
-				"price_takeaway":8.30,
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":8.30
 			}
 		]
 	},
 	"CM": {
 		"name":"Les Croque-monsieurs",
 		"description":"Servis avec salade composée",
-		"items":[]
+		"items":[
+			{
+				"id":"CM1",
+				"name":"Poulet",
+				"description":"",
+				"price":11.00,
+				"price_takeaway":8.30
+			},
+			{
+				"id":"CM2",
+				"name":"Thon",
+				"description":"",
+				"price":11.00,
+				"price_takeaway":8.30
+			},
+			{
+				"id":"CM3",
+				"name":"Jambon",
+				"description":"",
+				"price":11.00,
+				"price_takeaway":8.30
+			}
+		]
 	},
 	"AM": {
 		"name":"Les Américains",
-		"description":"",
-		"items":[]
+		"description":"A base de frites et fromage. Sur place servis avec salde composée",
+		"items":[
+			{
+				"id":"AM1",
+				"name":"Epaule",
+				"description":"",
+				"price":7.00,
+				"price_takeaway":5.00
+			},
+			{
+				"id":"AM2",
+				"name":"Flamme",
+				"description":"",
+				"price":7.00,
+				"price_takeaway":5.00
+			},
+			{
+				"id":"AM3",
+				"name":"Poulet",
+				"description":"",
+				"price":7.50,
+				"price_takeaway":5.50
+			},
+			{
+				"id":"AM4",
+				"name":"Merguez",
+				"description":"(boeuf-mouton)",
+				"price":7.50,
+				"price_takeaway":5.50
+			},
+			{
+				"id":"AM5",
+				"name":"Bouchons",
+				"description":"(poulet)",
+				"price":8.00,
+				"price_takeaway":6.00
+			},
+			{
+				"id":"AM6",
+				"name":"Sarcives",
+				"description":"(porc)",
+				"price":8.00,
+				"price_takeaway":6.00
+			},
+			{
+				"id":"AM7",
+				"name":"Thon",
+				"description":"",
+				"price":8.50,
+				"price_takeaway":6.50
+			},
+			{
+				"id":"AM8",
+				"name":"Steak",
+				"description":"",
+				"price":8.50,
+				"price_takeaway":6.50
+			}
+		]
 	},
 	"PA": {
 		"name":"Les Paninis",
-		"description":"",
-		"items":[]
+		"description":"Sur place servis avec salade composée",
+		"items":[
+			{
+				"id":"PA1",
+				"name":"Epaule",
+				"description":"Tomates, fromage, oignons, épaule",
+				"price":6.00,
+				"price_takeaway":4.20
+			},
+			{
+				"id":"PA2",
+				"name":"Végétarien",
+				"description":"Salade, carottes, oignons, concombres, oeuf",
+				"price":6.50,
+				"price_takeaway":4.70
+			},
+			{
+				"id":"PA3",
+				"name":"Bouchon",
+				"description":"Tomates, fromage, bouchons (poulet)",
+				"price":6.50,
+				"price_takeaway":4.70
+			},
+			{
+				"id":"PA4",
+				"name":"Sarcives",
+				"description":"Tomates, fromage, sarcives (porc)",
+				"price":7.00,
+				"price_takeaway":5.20
+			},
+			{
+				"id":"PA5",
+				"name":"Merguez",
+				"description":"Tomates, fromage, merguez (boeuf-mouton)",
+				"price":7.50,
+				"price_takeaway":5.50
+			},
+			{
+				"id":"PA6",
+				"name":"Flamme",
+				"description":"Tomates, fromage, oignons, lardons, crème fraîche",
+				"price":7.50,
+				"price_takeaway":5.50
+			},
+			{
+				"id":"PA7",
+				"name":"Thon",
+				"description":"Tomates, fromage, oignons, thon",
+				"price":7.50,
+				"price_takeaway":5.50
+			},
+			{
+				"id":"PA8",
+				"name":"Nordique",
+				"description":"Saumon fumé, crème fraîche, fromage",
+				"price":8.00,
+				"price_takeaway":5.70
+			},
+			{
+				"id":"PA9",
+				"name":"Poulet",
+				"description":"Tomates, fromage, oignons, blanc de poulet",
+				"price":8.00,
+				"price_takeaway":5.70
+			},
+			{
+				"id":"PA10",
+				"name":"3 Fromages",
+				"description":"Emmental, fromage de chèvre, mozzarella",
+				"price":8.00,
+				"price_takeaway":5.70
+			}
+		]
 	},
 	"BU": {
 		"name":"Les Bun's",
-		"description":"",
-		"items":[]
+		"description":"Salade, frites, fromage. Sur place servis avec salade composée.",
+		"items":[
+			{
+				"id":"BU1",
+				"name":"Lardons",
+				"description":"",
+				"price":7.50,
+				"price_takeaway":5.50
+			},
+			{
+				"id":"BU2",
+				"name":"Poulet",
+				"description":"",
+				"price":8.00,
+				"price_takeaway":6.00
+			},
+			{
+				"id":"BU3",
+				"name":"Bouchons",
+				"description":"(poulet)",
+				"price":8.00,
+				"price_takeaway":6.00
+			},
+			{
+				"id":"BU4",
+				"name":"Merguez",
+				"description":"(boeuf-mouton)",
+				"price":8.00,
+				"price_takeaway":6.00
+			},
+			{
+				"id":"BU5",
+				"name":"Saumon",
+				"description":"",
+				"price":8.50,
+				"price_takeaway":6.50
+			},
+			{
+				"id":"BU6",
+				"name":"Steak",
+				"description":"",
+				"price":8.50,
+				"price_takeaway":6.50
+			},
+			{
+				"id":"BU7",
+				"name":"Sarcives",
+				"description":"",
+				"price":9.00,
+				"price_takeaway":7.00
+			}
+		]
 	},
 	"SW": {
 		"name":"Les Sandwichs",
-		"description":"",
-		"items":[]
+		"description":"Sur place servis avec salade composée.",
+		"items":[
+			{
+				"id":"SW1",
+				"name":"Poulet",
+				"description":"Salade, oignons, poulet",
+				"price":5.30,
+				"price_takeaway":3.30
+			},
+			{
+				"id":"SW2",
+				"name":"Pain bouchons",
+				"description":"",
+				"price":5.50,
+				"price_takeaway":3.50
+			},
+			{
+				"id":"SW3",
+				"name":"Pain bouchons gratiné",
+				"description":"",
+				"price":5.80,
+				"price_takeaway":3.80
+			},
+			{
+				"id":"SW4",
+				"name":"Végétarien",
+				"description":"Salade, carottes, concombres, oignons, oeuf",
+				"price":6.00,
+				"price_takeaway":4.50
+			},
+			{
+				"id":"SW5",
+				"name":"Montagnard",
+				"description":"Salade, jambon cru, comté",
+				"price":6.00,
+				"price_takeaway":4.50
+			},
+			{
+				"id":"SW6",
+				"name":"Hot Dog gratiné",
+				"description":"",
+				"price":6.00,
+				"price_takeaway":4.50
+			},
+			{
+				"id":"SW7",
+				"name":"Steak",
+				"description":"Salade, oignons, steak haché",
+				"price":6.50,
+				"price_takeaway":5.00
+			},
+			{
+				"id":"SW8",
+				"name":"Fromage des plaines gratiné",
+				"description":"",
+				"price":7.50,
+				"price_takeaway":5.50
+			},
+			{
+				"id":"SW9",
+				"name":"Burger macatia frites",
+				"description":"",
+				"price":8.00,
+				"price_takeaway":6.00
+			}
+		]
 	},
 	"DE": {
 		"name":"Les Desserts",
@@ -135,51 +393,287 @@
 				"name":"Glace (la boule)",
 				"description":"",
 				"price":2.00,
-				"price_takeaway":"",
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":""
 			},
 			{
 				"id":"DE2",
 				"name":"Salade de fruits frais",
 				"description":"",
 				"price":3.00,
-				"price_takeaway":2.50,
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":2.50
 			},
 			{
 				"id":"DE3",
 				"name":"Moelleux",
 				"description":"",
 				"price":3.00,
-				"price_takeaway":2.50,
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":2.50
 			},
 			{
 				"id":"DE4",
 				"name":"Milk-shake",
 				"description":"",
 				"price":3.50,
-				"price_takeaway":3.00,
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":3.00
 			},
 			{
 				"id":"DE5",
 				"name":"Tarte Maison",
 				"description":"",
 				"price":4.00,
-				"price_takeaway":3.50,
-				"price_alt":"",
-				"price_alt_takeaway":""
+				"price_takeaway":3.50
 			}
 		]
 	},
 	"BO": {
 		"name":"Les Boissons",
 		"description":"",
-		"items":[]
+		"items":[
+			{
+				"id":"BO1",
+				"name":"Coca boîte 33 cl",
+				"description":"",
+				"price":1.80,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO2",
+				"name":"Coca 50 cl",
+				"description":"",
+				"price":2.20,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO3",
+				"name":"Coca Light 50 cl",
+				"description":"",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO4",
+				"name":"Coca Zéro 50 cl",
+				"description":"",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO5",
+				"name":"Fanta Orange 50 cl",
+				"description":"",
+				"price":2.20,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO6",
+				"name":"Fanta Passion 50 cl",
+				"description":"",
+				"price":2.20,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO7",
+				"name":"Schweppes Agrumes 50 cl",
+				"description":"",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO8",
+				"name":"Sprite 50 cl",
+				"description":"",
+				"price":2.20,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"BO9",
+				"name":"Orangina 50 cl",
+				"description":"",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B10",
+				"name":"Cot Citron 33 cl",
+				"description":"",
+				"price":1.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B11",
+				"name":"Minute Maid",
+				"description":" (Tropical ou Pomme)",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B12",
+				"name":"Caprisonne",
+				"description":"",
+				"price":1.20,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B13",
+				"name":"Réa",
+				"description":"(Multi-fruits, mangue, orange, abricot ACE)",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B14",
+				"name":"Water-shake",
+				"description":"",
+				"price":3.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B15",
+				"name":"Thé glacé Pokka",
+				"description":"(Pêche, mangue, letchi, passion, melon)",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B16",
+				"name":"Bière Buckler",
+				"description":"(sans alcool)",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B17",
+				"name":"Eau Edena 1L",
+				"description":"",
+				"price":2.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B18",
+				"name":"Eau Edena 50 cl",
+				"description":"",
+				"price":1.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B19",
+				"name":"Eau Edena Pétillante 50 cl",
+				"description":"",
+				"price":2.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B20",
+				"name":"Eau Cilaos 50 cl",
+				"description":"",
+				"price":2.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B21",
+				"name":"San-Pellegrino 50 cl",
+				"description":"",
+				"price":2.60,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B22",
+				"name":"Bière Dodo 33 cl",
+				"description":"",
+				"price":1.80,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B23",
+				"name":"Bière Héritage 33 cl",
+				"description":"",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B24",
+				"name":"Bière Radler 33 cl",
+				"description":"",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B25",
+				"name":"Bière Heineken 25 cl",
+				"description":"",
+				"price":2.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B26",
+				"name":"Bière Heineken 33 cl",
+				"description":"",
+				"price":3.50,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B27",
+				"name":"Rosé du caviste - le verre",
+				"description":"",
+				"price":3.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B28",
+				"name":"Rosé du caviste - le quart (25 cl)",
+				"description":"",
+				"price":5.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B29",
+				"name":"Rosé du caviste - le demi (50 cl)",
+				"description":"",
+				"price":9.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B30",
+				"name":"Café",
+				"description":"",
+				"price":1.60,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B31",
+				"name":"Déca",
+				"description":"",
+				"price":1.60,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B32",
+				"name":"Noisette",
+				"description":"",
+				"price":2.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B33",
+				"name":"Grand crème",
+				"description":"",
+				"price":3.20,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B34",
+				"name":"Thé chaud",
+				"description":"",
+				"price":2.00,
+				"price_takeaway":"idem"
+			},
+			{
+				"id":"B35",
+				"name":"Chocolat chaud",
+				"description":"",
+				"price":3.20,
+				"price_takeaway":"idem"
+			}
+		]
 	}
 }

@@ -88,9 +88,10 @@ $(function() {                                              // When the DOM is r
             newContent +=          '<img width="250" height="150" src="http://fakeimg.pl/250x150/?text=Photo">';
             newContent +=        '</div>';
             newContent +=        '<div class="menu-item-price">';
-            newContent +=          data[cat].items[i].price.toFixed(2) + '€ ' + '<span>(sur place)</span>';
-            if(data[cat].items[i].price_takeaway != "") {
-                newContent +=      '<br>' + data[cat].items[i].price_takeaway.toFixed(2) + '€ ' + '<span>(à emporter)</span>';
+            newContent +=          data[cat].items[i].price.toFixed(2) + '€ ';
+            if(data[cat].items[i].price_takeaway != "idem") newContent += '<span>(sur place)</span>';
+            if($.isNumeric(data[cat].items[i].price_takeaway)) {
+                newContent += '<br>' + data[cat].items[i].price_takeaway.toFixed(2) + '€ ' + '<span>(à emporter)</span>';
             }
             newContent +=        '</div>';
             newContent +=     '</div>';

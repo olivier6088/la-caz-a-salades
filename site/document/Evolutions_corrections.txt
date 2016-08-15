@@ -1,0 +1,32 @@
+	Evolutions et corrections
+
+- Ajouter tous les items dans le .json.
+- Ajouter url des images dans le .json.
+- Ajouter description pour toutes les sous-catégories si pas de description sous-catégories alors ne pas générer l'html !
+- Changer la disposition des items dans les sous-catégories (adopter un système 3 items par ligne pour ordi bureau ensuite
+2 items et finalement 1 item) avec le modèle du smartphone pour chaque item (i.e. infos sous l'image).
+	.done Ajouter un margin-bottom pour les titres des catégories.
+- Gérer le cas des boissons avec une sous-catégorie supplémentaire qui garde le même style que la page catégorie (ou faire un bout de js à part).
+- Ajouter une photo de taille et de poids type pour les catégories (e.g. SL.jpg) et les items (e.g. SL1.jpg)
+pour évaluer le temsp de chargement.
+- Changer les items du menu par La carte | Nous contacter | A propos (ou bien News ou Infos).
+- Mettre les prix sur une seule ligne (e.g. 3,00€ (sur place) / 2,50€ (à emporter)).
+- Ajouter une condition dans le javascript pour mettre sur la ligne de dessous les prix dans le cas (base salade).
+- Afficher base salade ou base pâte en début de ligne.
+- Pour la page la carte ajouter des icônes font awesome devant chaque catégorie.
+- Mettre un carrousel de 3 items dans le jumbotron mais sans défilement automatique et sans flèche, mais avec 3 petits
+points blancs.
+- Corriger le bouton d'accès au menu en mode mobile (cf. avant-dernière vidéo).
+- Corriger le problème du retour en arrière de la page en mode ordinateur de bureau.
+- Revoir les marges dans le cas responsives pour la home-page en version mobile
+- Revoir les marges dans le cas responsives pour les pages catégories (p'tet considérer des images plus petites).
+- Ajouter les informations sur leBonPass (p'tet ajouter à propos) cf.image 20150808_125251.jpg
+- Créer un sytème de vote des articles (cf. bouquin avec t-shirt).
+- Ajouter une barre de recherche en haut à droite.
+- Ajouter un formulaire de contact simple (cf. bouquin).
+- Ajouter gestion des cookies + message.
+- Ajouter gestion des sessions.
+- Créer un système pokemon go (genre on passe à côté du restaurant => aléatoirement dans la journée propose un item gratuit).
+- Installer un objet connecté (genre un galet collant qui envoie une demande à un consommateur).
+- Créer un système de décotte du prix des articles invendus sur la fin de journée.
+- Créer un back-office.
