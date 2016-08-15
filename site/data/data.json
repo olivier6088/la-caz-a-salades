@@ -1,6 +1,6 @@
 {
 	"SL": {
-		"name":"Salades",
+		"name":"Les Salades",
 		"description":"Nos salades peuvent être accompagnées de pâtes fraîches",
 		"items":[
 			{
@@ -69,7 +69,7 @@
 		]
 	},
 	"PL": {
-		"name":"Plats",
+		"name":"Les Plats",
 		"description":"Servis avec salade composée et frites",
 		"items":[
 			{
@@ -102,32 +102,32 @@
 		]
 	},
 	"CM": {
-		"name":"Croque-monsieurs",
+		"name":"Les Croque-monsieurs",
 		"description":"Servis avec salade composée",
 		"items":[]
 	},
 	"AM": {
-		"name":"Américains",
+		"name":"Les Américains",
 		"description":"",
 		"items":[]
 	},
 	"PA": {
-		"name":"Paninis",
+		"name":"Les Paninis",
 		"description":"",
 		"items":[]
 	},
 	"BU": {
-		"name":"Bun's",
+		"name":"Les Bun's",
 		"description":"",
 		"items":[]
 	},
 	"SW": {
-		"name":"Sandwichs",
+		"name":"Les Sandwichs",
 		"description":"",
 		"items":[]
 	},
 	"DE": {
-		"name":"Desserts",
+		"name":"Les Desserts",
 		"description":"",
 		"items":[
 			{
@@ -178,7 +178,7 @@
 		]
 	},
 	"BO": {
-		"name":"Boissons",
+		"name":"Les Boissons",
 		"description":"",
 		"items":[]
 	}

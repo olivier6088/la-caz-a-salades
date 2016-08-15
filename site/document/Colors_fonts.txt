@@ -1,10 +1,10 @@
 		Colors and Fonts
 - Colors
-#B4F57B : vert pomme
-#FFFFFF : blanc
+#b4f57b : vert pomme
+#fff    : blanc
 #514453 : marron fonçé
 #dd5895 : fushia
-#FEFE6B : jaune
+#fefe6b : jaune
 
 - Fonts
 General fonts      : Oxygen (google font)

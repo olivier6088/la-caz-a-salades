@@ -1,7 +1,7 @@
 body {
 	font-size: 16px;
 	color: #fff;
-	background-color: #b4f57b;
+	background-color: #fff;
 	font-family: 'Oxygen', sans-serif;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 /* Menu button color */
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-	border: 1px solid #b4f57b;
+	border: 1px solid #fff;
 }
 /* END HEADER */
 
@@ -83,12 +83,13 @@ body {
 
 /* HOME PAGE */
 .container .jumbotron {
-	box-shadow: 0 0 50px #514453;
-	border: 2px solid #514453;
+	/* box-shadow: 0 0 50px #514453; */
+	border: 1px solid #514453;
 }
 #main-content h2 {
 	font-weight: 700;
-	text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);
+	text-shadow: 1px 2px 3px rgba(0,0,0, 0.1);
+	color: #dd5895;
 }
 #lacarte-tile, #lesdesserts-tile, #map-tile {
 	height: 250px;
@@ -123,7 +124,7 @@ body {
 	box-shadow: 0 1px 5px 1px #dd5895;
 }
 #lacarte-tile:hover span, #lesdesserts-tile:hover span, #map-tile:hover span {
-	color: #dd5895;
+	/* color: #dd5895; */
 }
 /* END HOME PAGE */
 
