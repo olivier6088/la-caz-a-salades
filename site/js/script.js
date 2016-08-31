@@ -119,20 +119,6 @@ $(function() {                                              // When the DOM is r
         var newContent = itemsDisplay(cat);
         $("#main-content").html(newContent);                                    // Update '#main-content'
     });
-    // Click on nav button '#nav-lesboissons'
-    $(document).on('click', '#nav-lesboissons', function(e) {                   // User clicks on nav link '#lacarte'
-        e.preventDefault();                                                     // Prevent loading page
-        var cat = "BO";                                                         // Get value of id attr
-        var newContent = itemsDisplay(cat);
-        $("#main-content").html(newContent);                                    // Update '#main-content'
-    });
-    // Click on nav button '#nav-lesdesserts' or '#lesdesserts-tile'
-    $(document).on('click', '#nav-lesdesserts, #lesdesserts-tile', function(e) { // User clicks on nav link '#lacarte'
-        e.preventDefault();                                                      // Prevent loading page
-        var cat = "DE";                                                          // Get value of id attr
-        var newContent = itemsDisplay(cat);
-        $("#main-content").html(newContent);                                     // Update '#main-content'
-    });
 
     // CLICK ON LOGO OR '#nav-accueil'
     $('.navbar-header a, #nav-accueil').on('click', function(e) {         // Click on logo
