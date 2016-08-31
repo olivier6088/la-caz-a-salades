@@ -1,6 +1,9 @@
-	Evolutions et corrections
+	Evolutions et corrections (tester à chaque fois sur am i responsive)
 
-- Ajouter tous les items dans le .json.
+- Ajouter tous les items dans le .json. ok
+- Modifier la carte en ne gardant que {Les Salades, Les Plats, Les Sandwichs, Les Desserts, Les Boissons}.
+- Ajouter les sous-catégories {Les Sandwichs}{Les Croques Monsieurs, Les Américains, Les Paninis, Les Bun's, Les Variés}.
+- Ajouter les sous-catégories {Les Boissons}{Les Boissons fraîches sans alcool, Les Boissons fraîches avec alcool, Les Boissons Chaudes}. 
 - Ajouter url des images dans le .json.
 - Ajouter description pour toutes les sous-catégories si pas de description sous-catégories alors ne pas générer l'html !
 - Changer la disposition des items dans les sous-catégories (adopter un système 3 items par ligne pour ordi bureau ensuite
