@@ -190,7 +190,7 @@ body {
 .menu-item-photo {
 	position: relative;
 	border: 1px solid #514453;
-    border-radius: 6px;
+	border-radius: 6px;
 	overflow: hidden;
 	padding: 0;
 	margin-right: -15px;
@@ -222,8 +222,7 @@ h3.menu-item-title {
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron {
-		background: url('../images/salle/jumbotron_1200.jpg') no-repeat;
-		height: 675px;
+		padding: 0;
 	}
 }
 
@@ -238,8 +237,7 @@ h3.menu-item-title {
 	}
 	/* END HEADER */
 	.container .jumbotron {
-		background: url('../images/salle/jumbotron_992.jpg') no-repeat;
-		height: 558px;
+		padding: 0;
 	}
 }
 
@@ -266,8 +264,7 @@ h3.menu-item-title {
 
 		/* HOME PAGE */
 		.container .jumbotron {
-			background: url('../images/salle/jumbotron_768.jpg') no-repeat;
-			height: 432px;
+			padding: 0;
 		}
 		/* END HOME PAGE */
 	}
