@@ -144,4 +144,9 @@ $(function() {                                              // When the DOM is r
         $('#main-content').load(url);                       // Add html snippet in '#main-content'
     });*/
 
+    // Super lightweight (~600 bytes) jQuery plugin to enable swipe gestures for Bootstrap 3 carousels on iOS and Android.
+    $(document).ready(function() {
+        $('.carousel').bcSwipe({ threshold: 50 });
+    })
+
 });
