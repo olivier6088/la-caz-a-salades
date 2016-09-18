@@ -93,7 +93,7 @@ body {
 	color: #dd5895;
 	margin-bottom: 30px;
 }
-#lacarte-tile, #lesdesserts-tile, #map-tile {
+#lacarte-tile, #apropos-tile, #contact-tile {
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
@@ -106,11 +106,11 @@ body {
 	background: url('../images/plats/plat_360X250.jpg') no-repeat;
 	background-position: center;
 }
-#lesdesserts-tile {
-	background: url('../images/plats/dessert_360X250.jpg') no-repeat;
+#apropos-tile {
+	background: url('http://fakeimg.pl/360x250/?text=Photo') no-repeat;
 	background-position: center;
 }
-#lacarte-tile span, #lesdesserts-tile span, #map-tile span {
+#lacarte-tile span, #apropos-tile span, #contact-tile span {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -122,10 +122,10 @@ body {
 	color: #fff;
 	opacity: .8;
 }
-#lacarte-tile:hover, #lesdesserts-tile:hover, #map-tile:hover {
+#lacarte-tile:hover, #apropos-tile:hover, #contact-tile:hover {
 	box-shadow: 0 1px 5px 1px #dd5895;
 }
-#lacarte-tile:hover span, #lesdesserts-tile:hover span, #map-tile:hover span {
+#lacarte-tile:hover span, #apropos-tile:hover span, #contact-tile:hover span {
 	/* color: #dd5895; */
 }
 /* END HOME PAGE */
@@ -314,7 +314,7 @@ h3.menu-item-title {
 			margin-top: 30px;
 			padding: 0;
 		}
-		#lacarte-tile, #lesdesserts-tile {
+		#lacarte-tile, #apropos-tile {
 			width: 360px;
 			margin: 0 auto 15px;
 		}
@@ -353,7 +353,7 @@ h3.menu-item-title {
 		/* END HEADER */
 
 		/* HOME PAGE */
-		#lacarte-tile, #lesdesserts-tile {
+		#lacarte-tile, #apropos-tile {
 			width: 280px;
 			margin: 0 auto 15px;
 		}
