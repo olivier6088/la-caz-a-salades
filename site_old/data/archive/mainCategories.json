@@ -1,0 +1,38 @@
+{
+	"SL":{
+		"name":"Salades",
+		"description":"Nos salades peuvent être accompagnées de pâtes fraîches"
+	},
+	"PL":{
+		"name":"Plats",
+		"description":""
+	},
+	"CM":{
+		"name":"Croque-monsieurs",
+		"description":""
+	},
+	"AM":{
+		"name":"Américains",
+		"description":""
+	},
+	"PA":{
+		"name":"Paninis",
+		"description":""
+	},
+	"BU":{
+		"name":"Bun's",
+		"description":""
+	},
+	"SW":{
+		"name":"Sandwichs",
+		"description":""
+	},
+	"DE":{
+		"name":"Desserts",
+		"description":""
+	},
+	"BO":{
+		"name":"Boissons",
+		"description":""
+	}
+}

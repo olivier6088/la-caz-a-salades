@@ -1,0 +1,111 @@
+{
+	"SL": {
+		"name":"Salades",
+		"description":"Nos salades peuvent être accompagnées de pâtes fraîches",
+		"items":[
+			{
+				"id":"SL1",
+				"name":"Végétarienne",
+				"description":"Tomates, carottes, poivrons, concombres, maïs, olives, oeufs",
+				"price":9.60,
+				"price_takeaway":6.80,
+				"price_alt":11.10,
+				"price_alt_takeaway":8.50
+			},
+			{
+				"id":"SL2",
+				"name":"Des Plaines",
+				"description":"Tomates, fromages des plaines, lardons ou thon",
+				"price":9.60,
+				"price_takeaway":6.80,
+				"price_alt":11.10,
+				"price_alt_takeaway":8.50
+			},
+			{
+				"id":"SL3",
+				"name":"Légumes vapeur",
+				"description":"Carottes, chouchou, pommes de terre, haricots verts, lardons ou thon",
+				"price":10.50,
+				"price_takeaway":7.50,
+				"price_alt":12.00,
+				"price_alt_takeaway":9.50
+			},
+			{
+				"id":"SL4",
+				"name":"Campagnarde",
+				"description":"Tomates, blancs de poulet, oignons, lardons, emmental",
+				"price":11.00,
+				"price_takeaway":8.00,
+				"price_alt":13.00,
+				"price_alt_takeaway":10.00
+			},
+			{
+				"id":"SL5",
+				"name":"Océane",
+				"description":"Tomates cerises, saumon fûmé, marlin ou espadon, citron",
+				"price":12.50,
+				"price_takeaway":10.00,
+				"price_alt":14.00,
+				"price_alt_takeaway":12.00
+			},
+			{
+				"id":"SL6",
+				"name":"Chèvre chaud",
+				"description":"Tomates cerises, noix, toast de chèvre",
+				"price":11.00,
+				"price_takeaway":"",
+				"price_alt":"",
+				"price_alt_takeaway":""
+			},
+			{
+				"id":"SL7",
+				"name":"La Caz",
+				"description":"Quiche du jour, salade, tomates, carottes, oignons, maïs",
+				"price":12.50,
+				"price_takeaway":9.50,
+				"price_alt":"",
+				"price_alt_takeaway":""
+			}
+		]
+	},
+	"PL": {
+		"name":"Plats",
+		"description":"",
+		"items":[]
+	},
+	"CM": {
+		"name":"Croque-monsieurs",
+		"description":"",
+		"items":[]
+	},
+	"AM": {
+		"name":"Américains",
+		"description":"",
+		"items":[]
+	},
+	"PA": {
+		"name":"Paninis",
+		"description":"",
+		"items":[]
+	},
+	"BU": {
+		"name":"Bun's",
+		"description":"",
+		"items":[]
+	},
+	"SW": {
+		"name":"Sandwichs",
+		"description":"",
+		"items":[]
+	},
+	"DE": {
+		"name":"Desserts",
+		"description":"",
+		"items":[]
+	},
+	"BO": {
+		"name":"Boissons",
+		"description":"",
+		"items":[]
+	}
+}
